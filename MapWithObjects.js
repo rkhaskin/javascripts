@@ -1,8 +1,9 @@
-const DataArray = require('./DataArray');
+const DataArray = require('./models/DataArray');
+const newReleases = DataArray.newReleases;
 
 var narrowArray = function(video) {
     return { id: video.id, title: video.title };
 }
 
-var newArray =  DataArray.newReleases.map(narrowArray);
+var newArray =  newReleases.map(narrowArray);
 console.log(newArray);

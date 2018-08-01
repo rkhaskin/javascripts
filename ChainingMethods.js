@@ -1,4 +1,4 @@
-const DataArray = require('./DataArray');
+const DataArray = require('./models/DataArray');
 
 var filterArray = function(video) {
     return video.rating === 4;

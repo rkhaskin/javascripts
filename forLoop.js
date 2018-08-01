@@ -1,8 +1,10 @@
-var names = ["Ben", "Jafar", "Matt", "Priya", "Brian"];
-var	counter;
+//Exercise 1: Print all the names in an array
 
-for(counter = 0; counter < names.length; counter++) {
-    console.log(names[counter]);
+var names = ["Ben", "Jafar", "Matt", "Priya", "Brian"];
+
+for (var cnt = 0; cnt < names.length; cnt++)
+{
+    console.log(names[cnt]);
 }
 
     

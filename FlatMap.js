@@ -1,5 +1,5 @@
-const DataArray = require('./MovieLists');
-require('./ArrayProtoFlatMap');
+const DataArray = require('./models/MovieLists');
+require('./prototype/ArrayProtoFlatMap');
 const movieLists = DataArray.movieLists;
 
 var allVideoIdsInMovieLists = movieLists

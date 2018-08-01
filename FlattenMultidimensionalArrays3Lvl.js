@@ -19,10 +19,10 @@
  ]
 */
 
-var MoviesList = require('./MovieLists3LvlDeep');
+var MoviesList = require('./models/MovieLists3LvlDeep');
 var movieLists = MoviesList.movieLists;
-require('./ArrayProtoFlatMap');
-require('./ArrayProtoMapImpl');
+require('./prototype/ArrayProtoFlatMap');
+require('./prototype/ArrayProtoMapImpl');
 
 var res = movieLists
 	  .map(function(movieList) {
