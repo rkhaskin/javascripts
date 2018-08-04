@@ -1,0 +1,3 @@
+If functions are objects and objects can have methods, 
+then functions can have methods.
+JavaScript functions come with several methods built into Function.prototype: apply, call, bind
