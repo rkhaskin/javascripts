@@ -19,10 +19,10 @@
  ]
 */
 
-var MoviesList = require('./models/MovieLists3LvlDeep');
+var MoviesList = require('../models/MovieLists3LvlDeep');
 var movieLists = MoviesList.movieLists;
-require('./prototype/ArrayProtoFlatMap');
-require('./prototype/ArrayProtoMapImpl');
+require('../prototype/ArrayProtoFlatMap');
+require('../prototype/ArrayProtoMapImpl');
 
 var res = movieLists
 	  .map(function(movieList) {
@@ -39,4 +39,4 @@ var res = movieLists
 		  .flatMap();
 	  })
       .flatMap();
-//console.log(res);      
+console.log(res);      

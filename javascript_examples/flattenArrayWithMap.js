@@ -2,7 +2,18 @@ const DataArray = require('../models/MovieLists');
 require('../prototype/ArrayProtoFlatMap');
 const movieLists = DataArray.movieLists;
 
+// returns a multidim array: [ [ 70111470, 654356453 ], [ 65432445, 675465 ] ]
 var allVideoIdsInMovieLists = movieLists
+   .map(function(movieList) {
+		return movieList.videos.map(function(video) {
+			return video.id;
+		  });
+    });
+
+console.log(allVideoIdsInMovieLists);
+
+// returns simple array [ 70111470, 654356453, 65432445, 675465 ]
+var allVideoIdsInMovieLists2 = movieLists
    .map(function(movieList) {
 		return movieList.videos.map(function(video) {
 			return video.id;
@@ -10,7 +21,7 @@ var allVideoIdsInMovieLists = movieLists
     })
     .flatMap();
 
-console.log(allVideoIdsInMovieLists);
+console.log(allVideoIdsInMovieLists2);
 
 // var arr1 = [1, 2, [3, 4]];
 // var arr2 = [].concat.apply([], arr1);

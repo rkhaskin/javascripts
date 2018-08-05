@@ -1,18 +1,34 @@
-// concat.apply converts array an into arguments: [1, 2, [3, 4]] -> goes into apply() -> (1, 2, [3], [4]) -> goes into concat
-// if an array is nested, and we want to copy/merge it (flattened) into a new array and flatten it, we use concat.apply
+require('../prototype/ArrayProtoMapImpl');
+require('../prototype/ArrayProtoFlatMap');
 
-var arr1 = [1, 2, [3, 4]];
+// Nearly every time we flatten a tree we chain map() and flatMap(). Sometimes, if we're dealing with a tree several levels deep, 
+// we'll repeat this combination many times in our code. To save on typing, let's create a concatMap function that's just a map operation, followed by a flatAll.
+Array.prototype.concatMap = function (projectionFunctionThatReturnsArray) {
+    return this.map(function (item) {
+        return projectionFunctionThatReturnsArray(item);
+    }).flatMap();
 
-// apply is only there to convert an array into a series of arguments for concat.
-// so instead of the [1, 2, [3, 4]], the input into concat is (1, 2, [3], [4]), 
-// which causes the nested arrays in the argument to be flattened (one level only)
-var arr2 = [].concat.apply([], arr1);
-console.log(arr2);
-// --output [ 1, 2, 3, 4 ]
+};
+
+// multidimensional array
+var spanishFrenchEnglishWords = [["cero", "rien", "zero"], ["uno", "un", "one"], ["dos", "deux", "two"], ["tres", "trei", "three"]];
+
+// collect all the words for each number, in every language, in a single, flat list
+//var allWords = range(0, spanishFrenchEnglishWords.length).concatMap(function (index) {
+var allWords = [0,1,2,3].concatMap(function (index) {
+    return spanishFrenchEnglishWords[index];
+});
+
+//console.log([].concat.apply([], spanishFrenchEnglishWords));
+console.log('arrays are equal ', JSON.stringify(allWords) === '["cero","rien","zero","uno","un","one","dos","deux","two","tres","trei","three"]');
 
 
-var arr3 = [].concat.apply([], [1, 2, [[3, 4]]]);
-console.log(arr3);
-// -- output [ 1, 2, [ 3, 4 ] ] - flattened by 1 level only
 
-console.log([].concat.apply([1, 2, [3, 4]]));
+// create an array of a specified size 
+function range(start, end) {
+    var foo = [];
+    for (var i = start; i <= end; i++) {
+        foo.push(i);
+    }
+    return foo;
+}

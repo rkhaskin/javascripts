@@ -1,6 +1,5 @@
 Array.prototype.flatMap = function() {
 	var results = [];
-	console.log("aaa = ", this);
 	this.forEach(function(subArray) {
 		results.push.apply(results, subArray);
 	});

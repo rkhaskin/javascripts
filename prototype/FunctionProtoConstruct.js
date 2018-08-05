@@ -1,3 +1,8 @@
+// You can use apply to chain constructors for an object, similar to Java. 
+//In the following example we will create a global Function method 
+//called construct, which will enable you to use an array-like object 
+//with a constructor instead of an arguments list.
+
 // different ways to add a function on the prototype
 
 // using newer Object.create

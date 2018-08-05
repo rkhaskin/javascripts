@@ -1,4 +1,4 @@
-const DataArray = require('./models/MovieLists');
+const DataArray = require('../models/MovieLists');
 
 var allVideoIdsInMovieLists = [];
 
