@@ -1,0 +1,10 @@
+// when call() is called without arguments, it will default to window when run in the browser.
+// will not work in node (could not make it work).
+
+var t = 'ooo';
+
+function display() {
+    console.log(this.t);
+}
+
+display.call();
