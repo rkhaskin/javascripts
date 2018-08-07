@@ -8,3 +8,7 @@ function display() {
 }
 
 display.call();
+
+
+//---- call, unlike bind, does not create a copy of the function. It executes it. Also call takes optional arguments: call(this, 'en', 'es')
+//---- the difference between call and apply is that apply takes an optional array, and call takes arguments. 
