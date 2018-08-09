@@ -5,7 +5,7 @@ function buildFunctions() {
 
     for (var i = 0; i < 3; i++) {
         arr.push(
-            // this function will be executed immediately in its own execution context. So evary "j" will be created in its own context and remain
+            // this function will be executed immediately in its own execution context. So every "j" will be created in its own context and remain
             // in memory after the context is gone thanks to closure.
             (function (j) {
                 // this is what goint to be pushed in the array
