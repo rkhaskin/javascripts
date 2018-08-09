@@ -8,7 +8,7 @@ function buildFunctions() {
             // this function will be executed immediately in its own execution context. So every "j" will be created in its own context and remain
             // in memory after the context is gone thanks to closure.
             (function (j) {
-                // this is what goint to be pushed in the array
+                // this is what is going to be pushed in the array
                 return function () {
                     console.log(j)
                 };
