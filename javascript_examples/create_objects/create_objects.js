@@ -6,7 +6,7 @@ myObj.lastName = 'Jones';
 
 console.log(myObj); // { firstName: 'Alex', lastName: 'Jones' }
 
-
+// add properties using dot
 var myCar = new Object();   // creating object
 myCar.make = 'Ford';        // adding properties to object
 myCar.model = 'Mustang';

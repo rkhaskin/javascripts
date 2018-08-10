@@ -12,3 +12,6 @@ https://gist.github.com/alexhawkins
 
 // proto methods: map, filter impl
 https://gist.github.com/alexhawkins/28aaf610a3e76d8b8264
+
+// create, copy objects (need to finish)
+https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab
