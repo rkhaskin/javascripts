@@ -18,3 +18,6 @@ https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-6410
 
 // good and brief explanation of js functions
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+
+// good info on npm
+https://docs.npmjs.com/getting-started/updating-local-packages
