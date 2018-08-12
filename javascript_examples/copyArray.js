@@ -1,4 +1,4 @@
-// example on how to flatten a multidimensional array
+// example on how to copy array
 
 var arr1 = [1, 2, 3, 4];
 
@@ -6,3 +6,7 @@ var arr1 = [1, 2, 3, 4];
 // to copy an array.
 var arr2 = [].concat([], arr1);
 console.log("copy array arr1 into a new array", arr2);
+
+// ES6 spred operator. Shallow copy
+var arr3 = [...arr1];
+console.log("arr3 ", arr2);
