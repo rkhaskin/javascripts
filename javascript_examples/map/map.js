@@ -8,7 +8,8 @@ const res = arr.map(function (elem) {
     return elem + 5;
 });
 
-console.log(res);
+console.log('Original = ',arr);
+console.log('New = ',  res);
 
 // map also takes args: elem, index and entire array
 const plus5 = arr.map((val, i, arr) => {
