@@ -1,0 +1,4 @@
+1) forLoop - the manual loop method. 
+   5 built-in calls to use on arrays:
+    Iteration: forEach, map, filter, reduce
+2) forEach_printSimpleArray.js - 
