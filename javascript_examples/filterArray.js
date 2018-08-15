@@ -1,5 +1,6 @@
 const DataArray = require('../models/DataArray');
 const newReleases = DataArray.newReleases;
+require('../prototype/ArrayProtoFilterImpl');
 
 // select only videos with rating 4
 var narrowArray = function(video) {

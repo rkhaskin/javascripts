@@ -1,4 +1,27 @@
-1) forLoop - the manual loop method. 
-   5 built-in calls to use on arrays:
-    Iteration: forEach, map, filter, reduce
-2) forEach_printSimpleArray.js - 
+Importance of js
+
+// iterate arrays
+
+1) forLoop - the manual loop method the old way
+   4 built-in calls to use on arrays:
+    Iteration: forEach, map, filter, reduce - show implementation
+2) forEach_printSimpleArray.js - different ways to declare a function and pass it to forEach.
+3) intro to DataArray model
+4) C:\Users\Slavik\javascripts\javascript_examples\forEach_returnNewObjectsArray.js
+5) C:\Users\Slavik\javascripts\javascript_examples\map_returnNewObjectsArray.js
+6) C:\Users\Slavik\javascripts\javascript_examples\forEach_UpdateObjectsArray.js - never do this
+7) C:\Users\Slavik\javascripts\javascript_examples\filterArray.js
+8) C:\Users\Slavik\javascripts\javascript_examples\FlattenMultidimensionalArrays.js flatten with nested forEach
+9) C:\Users\Slavik\javascripts\javascript_examples\flattenArrayWithMap.js - flatten with map() and flatMap()
+10) C:\Users\Slavik\javascripts\javascript_examples\FlattenMultidimensionalArrays3Lvl.js
+
+Copy objects
+11) C:\Users\Slavik\javascripts\javascript_examples\copy_objects\shallow_vs_deep.js - example of simple object vs complex object
+12) C:\Users\Slavik\javascripts\javascript_examples\copy_objects\object_assign_simple_props_copy.js - shallow copy example with assign()
+13) C:\Users\Slavik\javascripts\javascript_examples\copy_objects\object_assign_object_props_copy.js - shallow copy with assign() on complex object - problem
+14) C:\Users\Slavik\javascripts\javascript_examples\copy_objects\parse_stringify_deep_copy.js
+15) C:\Users\Slavik\javascripts\javascript_examples\copy_objects\deep_copy_code_loop.js - old reliable way.
+
+Copy arrays
+
+shallow copy vs deep copy

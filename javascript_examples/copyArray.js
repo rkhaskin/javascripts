@@ -10,3 +10,9 @@ console.log("copy array arr1 into a new array", arr2);
 // ES6 spred operator. Shallow copy
 var arr3 = [...arr1];
 console.log("arr3 ", arr2);
+
+// 
+var arr5 = [1, 2, 3, 4, {a:1}];
+
+let arr6 = JSON.parse(JSON.stringify(arr5));
+console.log(arr6);
