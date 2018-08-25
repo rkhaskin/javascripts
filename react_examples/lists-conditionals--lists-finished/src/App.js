@@ -13,8 +13,8 @@ class App extends Component {
     showPersons: false
   }
 
-  nameChangedHandler = ( event, id ) => {
-    const personIndex = this.state.persons.findIndex(p => {
+  nameChangedHandler = function( event, id ) {
+      const personIndex = this.state.persons.findIndex(p => {
       return p.id === id;
     });
 
@@ -32,14 +32,14 @@ class App extends Component {
     this.setState( {persons: persons} );
   }
 
-  deletePersonHandler = (personIndex) => {
+  deletePersonHandler = function(personIndex) {
     // const persons = this.state.persons.slice();
     const persons = [...this.state.persons];
     persons.splice(personIndex, 1);
     this.setState({persons: persons});
   }
 
-  togglePersonsHandler = () => {
+  togglePersonsHandler = function() {
     const doesShow = this.state.showPersons;
     this.setState( { showPersons: !doesShow } );
   }
