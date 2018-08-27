@@ -5,6 +5,10 @@ import Button from '../../UI/Button/Button';
 
 const orderSummary = ( props ) => {
     const ingredientSummary = Object.keys( props.ingredients )
+    // RK
+        .filter(igKey => {
+            return props.ingredients[igKey] > 0
+        })
         .map( igKey => {
             return (
                 <li key={igKey}>
